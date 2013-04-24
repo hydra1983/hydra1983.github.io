@@ -127,3 +127,8 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
   pages_list :
     provider : "custom"
+
+  jekyll_sort :
+    - src: pages
+      direction: up
+      dest: pages_sorted
