@@ -83,7 +83,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : hydra1983
+      short_name : hydra1983sblog
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
