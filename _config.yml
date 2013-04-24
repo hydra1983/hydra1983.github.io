@@ -130,5 +130,6 @@ JB :
 
   jekyll_sort :
     - src: pages
+      by: sort
       direction: up
       dest: pages_sorted
