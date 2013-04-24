@@ -2,7 +2,7 @@
 layout: page
 title: Home
 group: navigation
-sort: 1
+sort: 10
 ---
 {% include JB/setup %}
 
