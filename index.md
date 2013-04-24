@@ -1,6 +1,7 @@
 ---
 layout: page
 title: I'm Here
+group: navigation
 ---
 {% include JB/setup %}
 
