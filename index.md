@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: Latest
 group: navigation
 sort: 10
 ---

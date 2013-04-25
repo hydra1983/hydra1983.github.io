@@ -2,6 +2,6 @@
 layout: page
 title: "About"
 group: navigation
-sort: 20
+sort: 60
 ---
 {% include JB/setup %}
