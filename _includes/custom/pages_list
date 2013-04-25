@@ -1,4 +1,4 @@
-{% for node in site.pages %}
+{% for node in site.config.pages_sorted %}
   {% if node.title != null %}
     {% if group == null or group == node.group %}
       {% if page.url == node.url %}
