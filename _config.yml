@@ -12,7 +12,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Puzzles from The Acient
-tagline: Site Tagline
+tagline: Programming Every Day!
 author :
   name : Edison Guo
   email : hydra1983@gmail.com
@@ -35,6 +35,10 @@ jekyll_sort:
   - src: pages
     by: sort
     dest: pages_sorted
+
+#Search
+exclude_from_search: true
+lunr_excludes: [search.html,tags.html,categories.html,pages.html,archive.html,index.html]
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

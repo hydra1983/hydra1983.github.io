@@ -2,7 +2,6 @@
 layout: page
 title: Latest
 group: navigation
-tagline: "Programming every day!"
 sort: 10
 ---
 {% include JB/setup %}
