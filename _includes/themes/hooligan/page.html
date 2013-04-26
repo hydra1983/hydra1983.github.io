@@ -7,5 +7,11 @@
 <div class="row">
   <div class="span8">
     {{ content }}
+
+	{% if page.commentable and page.commentable == true %}
+		<div>
+			{% include JB/comments %}
+		</div>
+	{% endif %}
   </div>
 </div>
