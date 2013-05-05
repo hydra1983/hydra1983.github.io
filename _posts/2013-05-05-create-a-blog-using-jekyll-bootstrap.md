@@ -14,6 +14,7 @@ tags: [jekyll,ruby]
 3. 因为 [github](https://github.com) 是[不允许 jekyll 的 plugin 运行](https://help.github.com/articles/pages-don-t-build-unable-to-run-jekyll)的，因此我创建了一个 [site_source](https://github.com/hydra1983/hydra1983.github.io/tree/site_source) 的分支，将 [Jekyll-Bootstrap](http://jekyllbootstrap.com/) 的源码提交进去，然后将生成的 [site](https://github.com/mojombo/jekyll/wiki/usage#_site) 提交到 [master](https://github.com/hydra1983/hydra1983.github.io) 分支中。  
 4. 虽然不想修改 [hooligan](http://themes.jekyllbootstrap.com/preview/hooligan/) (主题)的源码，但最终还是不得不进行了妥协。在可扩展性上 [jekyll](https://github.com/mojombo/jekyll) 应该还能更进一步，或许可以参考下 [modex](http://modx.com/) 的模板系统。  
 5. 若在生成 page 或 post 时报错 “invalid byte sequence in GBK (ArgumentError)”，参考[这里](http://www.ijser.cn/article/2013/04/10/note-about-jekyll/)。
+6. 除了 [Jekyll-Bootstrap](http://jekyllbootstrap.com/) 还有 [ruhoh](http://ruhoh.com/) 可以做同样的事情。
 
 参考内容：  
 1. [理想的写作环境：git+github+markdown+jekyll](http://www.yangzhiping.com/tech/writing-space.html)    
