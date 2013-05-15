@@ -7,7 +7,9 @@ tags: []
 ---
 {% include JB/setup %}
 
-I just installed ubuntu 12.10 server edition 64bit. When I want to reboot the system, I just got stuck. After googled a lot, I got the answer:
+I installed ubuntu 12.10 server edition 64bit. When I want to reboot the system, I got stuck. 
+
+After googled a lot, I got the answer:
 {% highlight bash %}
 sudo vi /etc/default/grub
 {% endhighlight %}
