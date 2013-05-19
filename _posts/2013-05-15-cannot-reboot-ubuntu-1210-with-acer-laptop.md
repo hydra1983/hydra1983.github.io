@@ -2,7 +2,7 @@
 layout: post
 title: "Cannot Reboot Ubuntu 12.10 on Acer Laptop"
 description: ""
-category: 
+category: "my tech" 
 tags: [Ubuntu,Acer,efi]
 ---
 {% include JB/setup %}
