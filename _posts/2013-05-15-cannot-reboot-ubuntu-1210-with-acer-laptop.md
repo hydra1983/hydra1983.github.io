@@ -3,7 +3,7 @@ layout: post
 title: "Cannot Reboot Ubuntu 12.10 on Acer Laptop"
 description: ""
 category: "my tech" 
-tags: [Ubuntu,Acer,efi]
+tags: [ubuntu,acer,efi]
 ---
 {% include JB/setup %}
 

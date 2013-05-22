@@ -3,7 +3,12 @@ div.sidebar section {
 	margin-bottom:10px;
 }
 
-div.sidebar section hr {
+div.sidebar hr {
 	margin:0;
 	margin-bottom:5px;
+}
+
+div.page-header hr{
+	margin:0;
+	margin-top:5px;
 }
