@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "如何升级Ubuntu Server的内核"
+title: "如何升级 Ubuntu Server 12.10 的内核"
 description: ""
 category: "my tech" 
 tags: [ubuntu, kernal]
