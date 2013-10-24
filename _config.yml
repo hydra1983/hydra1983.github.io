@@ -47,6 +47,8 @@ lunr_excludes: [search.html,tags.html,categories.html,pages.html,archive.html,in
 JB :
   version : 0.3.0
 
+  DOMAIN_NAME : hydra1983.com
+
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
   # however this value will be dynamically changed depending on your deployment situation.
@@ -115,7 +117,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-3208300-2'
+        tracking_id : 'UA-3208300-4'
     getclicky :
       site_id : 
     mixpanel :
