@@ -7,7 +7,7 @@ tags: [ubuntu, kernal]
 ---
 {% include JB/setup %}
 
-{% highlight bash %}
+```bash
 sudo apt-cache search linux-image
 sudo apt-get install linux-image-{suffix}
-{% endhighlight %}
+```
