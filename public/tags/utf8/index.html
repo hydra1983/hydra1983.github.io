@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: pandoc | Puzzles from The Acient</title>
+  <title>Tag: utf8 | Puzzles from The Acient</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="og:type" content="blog">
 <meta name="og:title">
-<meta name="og:url" content="http://blog.hydra1983.com/tags/pandoc/">
+<meta name="og:url" content="http://blog.hydra1983.com/tags/utf8/">
 <meta name="og:image">
 <meta name="og:site_name" content="Puzzles from The Acient">
 <meta name="og:description">
@@ -81,16 +81,12 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-markdown-to-pdf" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-chinese-character-problem-with-javac-and-javap-in-mac-shell" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2013/12/28/markdown-to-pdf/" class="article-date">
-  <time datetime="2013-12-27T16:00:00.000Z" itemprop="datePublished">Dec 28 2013</time>
+    <a href="/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/" class="article-date">
+  <time datetime="2014-01-24T11:31:14.000Z" itemprop="datePublished">Jan 24 2014</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/my tech/">my tech</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -99,7 +95,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2013/12/28/markdown-to-pdf/">从 Markdown 生成 Pdf</a>
+      <a class="article-title" href="/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/">Chinese Character Problem With &#39;Javac&#39; and &#39;Javap&#39; in Mac Shell</a>
     </h1>
   
 
@@ -107,34 +103,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>用 <a href="http://brackets.io/" target="_blank">Brackets</a> 和 <a href="https://help.github.com/articles/github-flavored-markdown" target="_blank">Markdown</a> 写完简历后，想到需要将 markdown 文件转为其他格式才能作为简历分发出去。这其他格式，就支持程度来说，自然是 PDF 了。于是乎，google 之，大概有两种思路：</p>
-<ol>
-<li>将 markdown 文件直接转化为 PDF，可以使用 <a href="http://johnmacfarlane.net/pandoc/" target="_blank">pandoc</a></li>
-<li>将 markdown 文件转化为 HTML ，然后将 HTML 转化为 PDF ，可以使用 <a href="https://github.com/chjj/marked" target="_blank">marked</a> 和 <a href="http://phantomjs.org/" target="_blank">phantomjs</a></li>
-</ol>
-<h3 id="-">第一种思路</h3>
-<ul>
-<li>下载并安装 <a href="https://pandoc.googlecode.com/files/pandoc-1.12.2.1.msi" target="_blank">pandoc for win</a></li>
-<li>下载并安装 <a href="http://mirror.bjtu.edu.cn/CTAN/systems/win32/miktex/setup/basic-miktex.exe" target="_blank">MiKTeX for win</a></li>
-<li>安装完后所需工具会自动添加到系统路径中去</li>
-<li>下载<a href="https://raw.github.com/tzengyuxio/pages/gh-pages/pandoc/pm-template.latex" target="_blank">这个模板</a>，以支持中文的自动换行等</li>
-<li>用文本编辑器（我用的是 Sublime Text 3）打开 pm-template.latex，找到这一行：</li>
-</ul>
+        <p>To learn the class initialization process of java, I get <a href="http://blog.csdn.net/biaobiaoqi/article/details/11910241" target="_blank">this</a> article from google. However, when I write the code to a local file and compile it with <strong>javac</strong>, I get some encoding problem with the output. The same problem happens when I run <strong>javap</strong> as well.</p>
+<p>I can find the solution <a href="http://stackoverflow.com/questions/361975/setting-the-default-java-character-encoding/623036#623036" target="_blank">here</a> and <a href="http://stackoverflow.com/questions/361975/setting-the-default-java-character-encoding/623036#623036" target="_blank">here</a>. This is what I adopt: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>JAVA_OPTS=<span class="string">"<span class="variable">${JAVA_OPTS}</span> -Dfile.encoding=UTF-8"</span>
+<span class="comment"># JAVA_OPTS="${JAVA_OPTS} -Dclient.encoding.override=UTF-8"</span>
+<span class="keyword">export</span> JAVA_OPTS
 
-        
-          <p class="article-more-link">
-            <a href="/2013/12/28/markdown-to-pdf/#more">Read More</a>
-          </p>
-        
+JAVA_TOOL_OPTIONS=<span class="string">"<span class="variable">${JAVA_TOOL_OPTIONS}</span> -Dfile.encoding=UTF-8"</span>
+<span class="keyword">export</span> JAVA_TOOL_OPTIONS
+</pre></td></tr></table></figure>
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.hydra1983.com/2013/12/28/markdown-to-pdf/" data-id="t6vk4rft89mk5gju" class="article-share-link">Share</a>
+      <a data-url="http://blog.hydra1983.com/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/" data-id="ty8cb2lo8e191p0e" class="article-share-link">Share</a>
       
-        <a href="http://blog.hydra1983.com/2013/12/28/markdown-to-pdf/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://blog.hydra1983.com/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/brackets/">brackets</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/marked/">marked</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pandoc/">pandoc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pdf/">pdf</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/phantomjs/">phantomjs</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/">bash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chinese/">chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javac/">javac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javap/">javap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/osx/">osx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/">shell</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/utf8/">utf8</a></li></ul>
 
     </footer>
   </div>
