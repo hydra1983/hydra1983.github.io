@@ -1,0 +1,26 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+  Past: http://blog.163.com/hydra1983
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# Miscellaneous
+google_analytics: 'UA-3208300-4'
+favicon: /favicon.png
+twitter: hydra1983
+google_plus: 116401978987423166016
