@@ -1,5 +1,7 @@
+---
 title: Chinese Character Problem with 'javac' and 'javap' in Mac Shell
 date: 2014-01-24 19:31:14
+category: "my tech"
 tags: [chinese, utf8, shell, javac, javap, osx, bash]
 ---
 
@@ -15,4 +17,3 @@ export JAVA_OPTS
 JAVA_TOOL_OPTIONS="${JAVA_TOOL_OPTIONS} -Dfile.encoding=UTF-8"
 export JAVA_TOOL_OPTIONS
 ```
-
