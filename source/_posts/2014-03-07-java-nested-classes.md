@@ -17,7 +17,7 @@ tags: [java,嵌套类,内部类]
 
 根据文档，嵌套类又可分为 **静态嵌套类** 和 **非静态嵌套类**。定义为 **static** 的嵌套类称之为 **静态嵌套类**，非 **static** 的嵌套类称之为 **内部类**：
 
-``` Java
+```java
 class OuterClass {
     ...
     // 静态嵌套类 (static nested class)
@@ -34,7 +34,7 @@ class OuterClass {
 
 内部类又有两种特殊形式，**局部类** 和 **匿名类**：
 
-```
+```java
 class OuterClass {
     interface Stranger{
         void sayHello();
