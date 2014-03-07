@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: shell | Puzzles from The Acient</title>
+  <title>Nested Classes in Java —— 不再混乱 （一） | Puzzles from The Acient</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="og:type" content="blog">
-<meta name="og:title">
-<meta name="og:url" content="http://blog.hydra1983.com/tags/shell/">
+<meta name="og:title" content="Nested Classes in Java —— 不再混乱 （一）">
+<meta name="og:url" content="http://blog.hydra1983.com/2014/03/07/java-nested-classes/">
 <meta name="og:image">
 <meta name="og:site_name" content="Puzzles from The Acient">
-<meta name="og:description">
+<meta name="og:description" content="关于 Java 的嵌套类和内部类，网上的说法多种多样。嵌套类、嵌入类、内嵌类、内部类、局部内部类、成员内部类、匿名内部类、静态内部类、静态嵌套类……仔细阅读 Oracle 的文档后，终于对其有了一个清晰的概念。
+
+
+
+The Java programming language allows you to define a class within another class. Such a cla">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="hydra1983">
 <link rel="publisher" href="116401978987423166016">
@@ -79,12 +83,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-chinese-character-problem-with-javac-and-javap-in-mac-shell" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-java-nested-classes" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/" class="article-date">
-  <time datetime="2014-01-24T11:31:14.000Z" itemprop="datePublished">Jan 24 2014</time>
+    <a href="/2014/03/07/java-nested-classes/" class="article-date">
+  <time datetime="2014-03-07T06:46:31.000Z" itemprop="datePublished">Mar 7 2014</time>
 </a>
     
   <div class="article-category">
@@ -98,8 +100,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/">Chinese Character Problem With &#39;Javac&#39; and &#39;Javap&#39; in Mac Shell</a>
+    <h1 class="article-title" itemprop="name">
+      Nested Classes in Java —— 不再混乱 （一）
     </h1>
   
 
@@ -107,41 +109,128 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>To learn the class initialization process of java, I get <a href="http://blog.csdn.net/biaobiaoqi/article/details/11910241" target="_blank">this</a> article from google. However, when I write the code to a local file and compile it with <strong>javac</strong>, I get some encoding problem with the output. The same problem happens when I run <strong>javap</strong> as well.</p>
-<p>I can find the solution <a href="http://stackoverflow.com/questions/361975/setting-the-default-java-character-encoding/623036#623036" target="_blank">here</a> and <a href="http://stackoverflow.com/questions/361975/setting-the-default-java-character-encoding/623036#623036" target="_blank">here</a>. This is what I adopt: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+        <p>关于 Java 的嵌套类和内部类，网上的说法多种多样。嵌套类、嵌入类、内嵌类、内部类、局部内部类、成员内部类、匿名内部类、静态内部类、静态嵌套类……仔细阅读 <a href="http://docs.oracle.com/javase/tutorial/java/javaOO/nested.html" target="_blank">Oracle 的文档</a>后，终于对其有了一个清晰的概念。</p>
+<a id="more"></a>
+
+<blockquote>
+<p>The Java programming language allows you to define a class within another class. Such a class is called a <strong>nested class</strong>...</p>
+</blockquote>
+<p>将 <strong>Nested Class</strong> 翻译为 <strong>嵌套类</strong> 感觉还是挺合适的。上面的英文说明了嵌套类的定义：</p>
+<blockquote>
+<p>在另一个类中定义的类，称其为 <strong>嵌套类</strong>。</p>
+</blockquote>
+<p>根据文档，嵌套类又可分为 <strong>静态嵌套类</strong> 和 <strong>非静态嵌套类</strong>。定义为 <strong>static</strong> 的嵌套类称之为 <strong>静态嵌套类</strong>，非 <strong>static</strong> 的嵌套类称之为 <strong>内部类</strong>：</p>
+<figure class="highlight Java"><table><tr><td class="gutter"><pre>1
 2
 3
 4
 5
 6
-</pre></td><td class="code"><pre>JAVA_OPTS=<span class="string">"<span class="variable">${JAVA_OPTS}</span> -Dfile.encoding=UTF-8"</span>
-<span class="comment"># JAVA_OPTS="${JAVA_OPTS} -Dclient.encoding.override=UTF-8"</span>
-<span class="keyword">export</span> JAVA_OPTS
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre>class OuterClass {
+    ...
+    <span class="comment">// 静态嵌套类 (static nested class)</span>
+    <span class="keyword">static</span> class StaticNestedClass {
+        ...
+    }
+    
+    <span class="comment">// 内部类 (inner class)</span>
+    class InnerClass {
+        ...
+    }
+}
+</pre></td></tr></table></figure>
 
-JAVA_TOOL_OPTIONS=<span class="string">"<span class="variable">${JAVA_TOOL_OPTIONS}</span> -Dfile.encoding=UTF-8"</span>
-<span class="keyword">export</span> JAVA_TOOL_OPTIONS
+<p>内部类又有两种特殊形式，<strong>局部类</strong> 和 <strong>匿名类</strong>：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="code"><pre>class OuterClass {
+    interface Stranger{
+        void sayHello();
+    }
+    
+    public static void func1(){
+        <span class="keyword">...</span>
+        // 局部类 (local class)
+        class LocalClass {
+            <span class="keyword">...</span>
+        }
+        <span class="keyword">...</span>
+        
+        // 匿名类 (anonymous class)
+        Stranger s = new Stranger(){
+            public void sayHello(){
+                <span class="keyword">...</span>
+            }
+        }
+        
+        s.sayHello();
+        <span class="keyword">...</span>
+    }
+}
 </pre></td></tr></table></figure>
 
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.hydra1983.com/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/" data-id="axe7ys9gbi0rl8kb" class="article-share-link">Share</a>
+      <a data-url="http://blog.hydra1983.com/2014/03/07/java-nested-classes/" data-id="zkhjm6wffo69va2d" class="article-share-link">Share</a>
       
-        <a href="http://blog.hydra1983.com/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://blog.hydra1983.com/2014/03/07/java-nested-classes/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/">bash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chinese/">chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javac/">javac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javap/">javap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/osx/">osx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/">shell</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/utf8/">utf8</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/内部类/">内部类</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/嵌套类/">嵌套类</a></li></ul>
 
     </footer>
   </div>
   
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Chinese Character Problem With &#39;Javac&#39; and &#39;Javap&#39; in Mac Shell</div>
+    </a>
+  
+</nav>
+
+  
 </article>
 
 
-  
-  
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 </section>
         
           <aside id="sidebar">
@@ -241,11 +330,13 @@ JAVA_TOOL_OPTIONS=<span class="string">"<span class="variable">${JAVA_TOOL_OPTIO
 <script>
   var disqus_shortname = 'hydra1983sblog';
   
+  var disqus_url = 'http://blog.hydra1983.com/2014/03/07/java-nested-classes/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//go.disqus.com/count.js';
+    dsq.src = '//go.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

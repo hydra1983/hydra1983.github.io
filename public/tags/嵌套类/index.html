@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: shell | Puzzles from The Acient</title>
+  <title>Tag: 嵌套类 | Puzzles from The Acient</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="og:type" content="blog">
 <meta name="og:title">
-<meta name="og:url" content="http://blog.hydra1983.com/tags/shell/">
+<meta name="og:url" content="http://blog.hydra1983.com/tags/嵌套类/">
 <meta name="og:image">
 <meta name="og:site_name" content="Puzzles from The Acient">
 <meta name="og:description">
@@ -81,10 +81,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-chinese-character-problem-with-javac-and-javap-in-mac-shell" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-java-nested-classes" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/" class="article-date">
-  <time datetime="2014-01-24T11:31:14.000Z" itemprop="datePublished">Jan 24 2014</time>
+    <a href="/2014/03/07/java-nested-classes/" class="article-date">
+  <time datetime="2014-03-07T06:46:31.000Z" itemprop="datePublished">Mar 7 2014</time>
 </a>
     
   <div class="article-category">
@@ -99,7 +99,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/">Chinese Character Problem With &#39;Javac&#39; and &#39;Javap&#39; in Mac Shell</a>
+      <a class="article-title" href="/2014/03/07/java-nested-classes/">Nested Classes in Java —— 不再混乱 （一）</a>
     </h1>
   
 
@@ -107,32 +107,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>To learn the class initialization process of java, I get <a href="http://blog.csdn.net/biaobiaoqi/article/details/11910241" target="_blank">this</a> article from google. However, when I write the code to a local file and compile it with <strong>javac</strong>, I get some encoding problem with the output. The same problem happens when I run <strong>javap</strong> as well.</p>
-<p>I can find the solution <a href="http://stackoverflow.com/questions/361975/setting-the-default-java-character-encoding/623036#623036" target="_blank">here</a> and <a href="http://stackoverflow.com/questions/361975/setting-the-default-java-character-encoding/623036#623036" target="_blank">here</a>. This is what I adopt: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre>JAVA_OPTS=<span class="string">"<span class="variable">${JAVA_OPTS}</span> -Dfile.encoding=UTF-8"</span>
-<span class="comment"># JAVA_OPTS="${JAVA_OPTS} -Dclient.encoding.override=UTF-8"</span>
-<span class="keyword">export</span> JAVA_OPTS
+        <p>关于 Java 的嵌套类和内部类，网上的说法多种多样。嵌套类、嵌入类、内嵌类、内部类、局部内部类、成员内部类、匿名内部类、静态内部类、静态嵌套类……仔细阅读 <a href="http://docs.oracle.com/javase/tutorial/java/javaOO/nested.html" target="_blank">Oracle 的文档</a>后，终于对其有了一个清晰的概念。</p>
 
-JAVA_TOOL_OPTIONS=<span class="string">"<span class="variable">${JAVA_TOOL_OPTIONS}</span> -Dfile.encoding=UTF-8"</span>
-<span class="keyword">export</span> JAVA_TOOL_OPTIONS
-</pre></td></tr></table></figure>
-
-
+        
+          <p class="article-more-link">
+            <a href="/2014/03/07/java-nested-classes/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.hydra1983.com/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/" data-id="axe7ys9gbi0rl8kb" class="article-share-link">Share</a>
+      <a data-url="http://blog.hydra1983.com/2014/03/07/java-nested-classes/" data-id="zkhjm6wffo69va2d" class="article-share-link">Share</a>
       
-        <a href="http://blog.hydra1983.com/2014/01/24/chinese-character-problem-with-javac-and-javap-in-mac-shell/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://blog.hydra1983.com/2014/03/07/java-nested-classes/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/">bash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chinese/">chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javac/">javac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javap/">javap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/osx/">osx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/">shell</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/utf8/">utf8</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/内部类/">内部类</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/嵌套类/">嵌套类</a></li></ul>
 
     </footer>
   </div>
