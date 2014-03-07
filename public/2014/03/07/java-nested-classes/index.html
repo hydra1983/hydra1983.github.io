@@ -120,7 +120,7 @@ The Java programming language allows you to define a class within another class.
 <p>在另一个类中定义的类，称其为 <strong>嵌套类</strong>。</p>
 </blockquote>
 <p>根据文档，嵌套类又可分为 <strong>静态嵌套类</strong> 和 <strong>非静态嵌套类</strong>。定义为 <strong>static</strong> 的嵌套类称之为 <strong>静态嵌套类</strong>，非 <strong>static</strong> 的嵌套类称之为 <strong>内部类</strong>：</p>
-<figure class="highlight Java"><table><tr><td class="gutter"><pre>1
+<figure class="highlight java"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -147,7 +147,7 @@ The Java programming language allows you to define a class within another class.
 </pre></td></tr></table></figure>
 
 <p>内部类又有两种特殊形式，<strong>局部类</strong> 和 <strong>匿名类</strong>：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
+<figure class="highlight java"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -173,26 +173,26 @@ The Java programming language allows you to define a class within another class.
 24
 </pre></td><td class="code"><pre>class OuterClass {
     interface Stranger{
-        void sayHello();
+        <span class="keyword">void</span> sayHello();
     }
     
-    public static void func1(){
-        <span class="keyword">...</span>
-        // 局部类 (local class)
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">func1</span>(){
+        ...
+        <span class="comment">// 局部类 (local class)</span>
         class LocalClass {
-            <span class="keyword">...</span>
+            ...
         }
-        <span class="keyword">...</span>
+        ...
         
-        // 匿名类 (anonymous class)
-        Stranger s = new Stranger(){
-            public void sayHello(){
-                <span class="keyword">...</span>
+        <span class="comment">// 匿名类 (anonymous class)</span>
+        Stranger s = <span class="keyword">new</span> Stranger(){
+            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayHello</span>(){
+                ...
             }
         }
         
         s.sayHello();
-        <span class="keyword">...</span>
+        ...
     }
 }
 </pre></td></tr></table></figure>
@@ -201,7 +201,7 @@ The Java programming language allows you to define a class within another class.
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.hydra1983.com/2014/03/07/java-nested-classes/" data-id="zkhjm6wffo69va2d" class="article-share-link">Share</a>
+      <a data-url="http://blog.hydra1983.com/2014/03/07/java-nested-classes/" data-id="5wokm5lsvzlzrptx" class="article-share-link">Share</a>
       
         <a href="http://blog.hydra1983.com/2014/03/07/java-nested-classes/#disqus_thread" class="article-comment-link">Comments</a>
       
