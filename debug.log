@@ -1,4 +1,4 @@
-date: 2014-03-12 14:34:40.094
+date: 2014-03-12 14:35:19.191
 argv: node /usr/local/bin/hexo deploy
 os: Darwin 13.0.0 darwin x64
 version:
@@ -13,16 +13,16 @@ version:
   openssl: 1.0.1e
 ---
 
-[debug] 14:34:39.628 Configuration file load successfully
-[debug] 14:34:39.630 Version info checked successfully
-[debug] 14:34:39.682 Script load successfully: fancybox.js
-[debug] 14:34:39.705 Theme layout loaded
-[debug] 14:34:39.736 Theme configuration loaded
-[debug] 14:34:39.740 Processed: CNAME
-[debug] 14:34:39.757 Theme source loaded
-[error] 14:34:40.076 { rawMessage: 'Unable to parse.',
+[debug] 14:35:18.727 Configuration file load successfully
+[debug] 14:35:18.729 Version info checked successfully
+[debug] 14:35:18.781 Script load successfully: fancybox.js
+[debug] 14:35:18.813 Theme layout loaded
+[debug] 14:35:18.832 Theme configuration loaded
+[debug] 14:35:18.837 Processed: CNAME
+[debug] 14:35:18.853 Theme source loaded
+[error] 14:35:19.173 { rawMessage: 'Unable to parse.',
   parsedLine: 5,
-  snippet: 'tags:[Debian,短信猫,USB,minicom,gnokii]',
+  snippet: 'tags:[Debian,SMS,USB,minicom,gnokii]',
   parsedFile: null,
   message: 'Unable to parse.',
   domain: 
