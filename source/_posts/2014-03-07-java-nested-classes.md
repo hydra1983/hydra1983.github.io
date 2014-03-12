@@ -1,5 +1,5 @@
 ---
-title: Nested Classes in Java —— 不再混乱 （一）
+title: "Nested Classes in Java —— 不再混乱 （一）"
 date: 2014-03-07 14:46:31
 category: "my tech"
 tags: [java,嵌套类,内部类]

@@ -1,5 +1,5 @@
 ---
-title: Chinese Character Problem with 'javac' and 'javap' in Mac Shell
+title: "Chinese Character Problem with 'javac' and 'javap' in Mac Shell"
 date: 2014-01-24 19:31:14
 category: "my tech"
 tags: [chinese, utf8, shell, javac, javap, osx, bash]
