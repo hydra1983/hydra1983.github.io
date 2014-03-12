@@ -7,6 +7,8 @@ tags: [Debian,短信猫,USB,minicom,gnokii]
 
 **本文中的所有命令均在 root 帐户下执行**
 
+***
+
 ## 准备工作
 
 * 确定SIM卡安装到了短信猫中
