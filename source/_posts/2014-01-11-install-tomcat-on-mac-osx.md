@@ -1,8 +1,9 @@
 ---
 layout: post
+date: 2014-01-11
 title: "Install Tomcat on Mac OS X"
 description: ""
-category: "my tech" 
+category: "my tech"
 tags: [mac, osx, tomcat]
 ---
 
@@ -177,7 +178,7 @@ INFO: Server startup in 2412 ms
 
 If Tomcat is running successfully following step 4. above, you should be able to see the Tomcat Welcome page at the following URL:
 
-[http://localhost:8080/](http://localhost:8080/) 
+[http://localhost:8080/](http://localhost:8080/)
 
 ### 6. Shut down Tomcat
 
@@ -223,7 +224,7 @@ function shutdown()
 function wait_for_death()
 {
         while /bin/kill -0 $1 2> /dev/null ; do
-                sleep 2 
+                sleep 2
         done
 }
 

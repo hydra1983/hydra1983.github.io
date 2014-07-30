@@ -1,5 +1,6 @@
 ---
 title: "Nested Classes in Java —— 不再混乱 （一）"
+date: 2014-03-07
 date: 2014-03-07 14:46:31
 category: "my tech"
 tags: [java,嵌套类,内部类]
@@ -24,7 +25,7 @@ class OuterClass {
     static class StaticNestedClass {
         ...
     }
-    
+
     // 内部类 (inner class)
     class InnerClass {
         ...
@@ -39,7 +40,7 @@ class OuterClass {
     interface Stranger{
         void sayHello();
     }
-    
+
     public static void func1(){
         ...
         // 局部类 (local class)
@@ -47,18 +48,16 @@ class OuterClass {
             ...
         }
         ...
-        
+
         // 匿名类 (anonymous class)
         Stranger s = new Stranger(){
             public void sayHello(){
                 ...
             }
         }
-        
+
         s.sayHello();
         ...
     }
 }
 ```
-
-

@@ -1,8 +1,9 @@
 ---
 layout: post
+date: 2013-12-28
 title: "从 Markdown 生成 PDF"
 description: ""
-category: "my tech" 
+category: "my tech"
 tags: [brackets, markdown, pdf, pandoc, phantomjs, nodejs, marked]
 ---
 
@@ -47,7 +48,7 @@ fc-list >> fonts.txt
 
 ```latex
 \usepackage[bookmarks=false, % disable bookmark in generated pdf
-            setpagesize=false, % page size defined by xetex 
+            setpagesize=false, % page size defined by xetex
 ```
 * 打开命令行提示符，并执行：
 

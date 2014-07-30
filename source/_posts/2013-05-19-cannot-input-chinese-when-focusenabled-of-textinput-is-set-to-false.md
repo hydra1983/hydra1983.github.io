@@ -1,8 +1,9 @@
 ---
 layout: post
+date: 2013-05-19
 title: "当 TextInput 的 'focusEnabled' 设为 'false' 的时候无法输入中文"
 description: ""
-category: "my tech" 
+category: "my tech"
 tags: [flex, input]
 ---
 测试环境：

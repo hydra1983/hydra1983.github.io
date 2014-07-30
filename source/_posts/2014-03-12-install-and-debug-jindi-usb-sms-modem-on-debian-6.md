@@ -1,8 +1,9 @@
 ---
 title: "在 Debian 6 中安装并调试金笛 USB 短信猫 M1206B"
+date: 2014-03-12
 date: 2014-03-12 14:07:54
 category: "my tech"
-tags: [Debian,短信猫,USB,minicom,gnokii]
+tags: [debian,短信猫,usb,minicom,gnokii]
 ---
 
 **本文中的所有命令均在 root 帐户下执行**
@@ -55,7 +56,7 @@ minicom -s
 #### 安装
 
 ```bash
-apt-get install 
+apt-get install
 ```
 
 #### 设置

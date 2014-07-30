@@ -1,6 +1,6 @@
 # Hexo Configuration
-## Docs: http://zespia.tw/hexo/docs/configuration.html
-## Source: https://github.com/tommy351/hexo/
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
 # Site
 title: "Puzzles from The Ancient"
@@ -19,6 +19,7 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
+permalink_defaults:
 
 # Directory
 source_dir: source
@@ -30,11 +31,10 @@ default_layout: post
 auto_spacing: true # Add spaces between asian characters and western characters
 titlecase: true # Transform title into titlecase
 external_link: true # Open external links in new tab
-max_open_file: 100
-multi_thread: true
 filename_case: 1
 render_drafts: false
 post_asset_folder: false
+relative_link: false
 highlight:
   enable: true
   line_number: true
@@ -58,6 +58,7 @@ tag: 2
 ## You can customize the logger format as defined in
 ## http://www.senchalabs.org/connect/logger.html
 port: 4000
+server_ip: 0.0.0.0
 logger: false
 logger_format:
 
@@ -77,10 +78,16 @@ pagination_dir: page
 disqus_shortname: hydra1983sblog
 
 # Extensions
-## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
-## Themes: https://github.com/tommy351/hexo/wiki/Themes
+## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
+## Themes: https://github.com/hexojs/hexo/wiki/Themes
 theme: landscape
 exclude_generator:
+
+# Deployment
+## Docs: http://zespia.tw/hexo/docs/deployment.html
+deploy:
+  type: github
+  repository: git@github.com:hydra1983/hydra1983.github.io.git
 
 # Markdown
 ## https://github.com/chjj/marked
@@ -97,9 +104,3 @@ markdown:
 ## https://github.com/hexojs/hexo-generator-sitemap
 sitemap:
     path: sitemap.xml
-
-# Deployment
-## Docs: http://zespia.tw/hexo/docs/deployment.html
-deploy:
-  type: github
-  repository: git@github.com:hydra1983/hydra1983.github.io.git
