@@ -14,4 +14,4 @@ REM 解压到同名目录中
 FOR %I IN (*.iso) DO 7z x -o%~nI %I
 ```
 
-所需的命令行工具可以在[这里](/uploads/7zCLI_920.zip)下载到
+所需的命令行工具可以在[这里](http://binary.qiniudn.com/7zCLI_920.zip)下载到
