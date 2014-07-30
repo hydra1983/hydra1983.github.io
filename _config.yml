@@ -104,3 +104,9 @@ markdown:
 ## https://github.com/hexojs/hexo-generator-sitemap
 sitemap:
     path: sitemap.xml
+
+# RSS Feed
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20

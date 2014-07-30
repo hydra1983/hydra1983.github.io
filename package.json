@@ -7,5 +7,6 @@
     "hexo-renderer-stylus": "*",
     "hexo-renderer-marked": "*",
     "hexo-generator-sitemap" : "*"
+    "hexo-generator-feed" : "*"
   }
 }
