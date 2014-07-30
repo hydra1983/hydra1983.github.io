@@ -1,8 +1,9 @@
 ---
 layout: post
+date: 2013-12-21
 title: "解压缩多个iso文件的批处理脚本"
 description: ""
-category: "my tech" 
+category: "my tech"
 tags: [batch, iso, 7z]
 ---
 

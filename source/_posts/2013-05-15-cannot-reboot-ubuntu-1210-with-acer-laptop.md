@@ -1,12 +1,13 @@
 ---
 layout: post
+date: 2013-05-15
 title: "Cannot Reboot Ubuntu 12.10 on Acer Laptop"
 description: ""
-category: "my tech" 
+category: "my tech"
 tags: [ubuntu,acer,efi]
 ---
 
-I installed ubuntu 12.10 server edition 64bit. When I want to reboot the system, I got stuck. 
+I installed ubuntu 12.10 server edition 64bit. When I want to reboot the system, I got stuck.
 
 After googled a lot, I got the answer:
 

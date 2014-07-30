@@ -1,8 +1,9 @@
 ---
 layout: post
+date: 2013-05-16
 title: "在 win7 上安装 Ruby 1.9.3 和 pygments"
 description: ""
-category: "my tech" 
+category: "my tech"
 tags: [ruby,python,pygments]
 ---
 
