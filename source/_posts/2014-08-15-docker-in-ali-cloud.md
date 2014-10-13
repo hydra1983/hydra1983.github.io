@@ -1,6 +1,6 @@
 title: 在阿里云中安装Docker
 date: 2014-08-15 11:06:17
-tags:
+tags: [docker, 阿里云]
 ---
 
 ### 安装脚本
